@@ -12,6 +12,6 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">A simple dashboard presented as an XBMC screensaver</summary>
-    <description lang="en">The Dashboard screensaver is a screensaver displaying RSS Feeds, Current Weather conditions, 2-day Weather forecast and a quote of a stock of your choice</description>
+    <description lang="en">The dashboard screensaver is a screensaver displaying RSS Feeds, current Weather conditions, 2-day Weather forecast and a quote of a stock of your choice</description>
   </extension>
 </addon>
