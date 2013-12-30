@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="RSS">
+        <setting label="RSS URI" type="text"   id="rssuri" default="www.n-tv.de/rss"/>
+        <setting label="Feed Loop (in ms)" type="number" id="feedloop" default="60000"/>
+    </category>
+    <category label="Stock Quote">
+    	<setting label="Stock Quote Symbol" type="text"   id="quotesymbol" default="AB100A.DE"/>
+    	<setting label="Stock Quote Label" type="text"   id="quotelabel" default="Air Berlin"/>
+    	<setting label="Use Own Quote Label" type="bool" id="ownquotelabel" default="false"/>
+    </category>
+</settings>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.screensaver.dashboard"
+       name="Screensaver Dashboard"
+       version="0.0.1"
+       provider-name="Bilakos(w.alexopoulos@gmail.com)">
+  <requires>
+    <import addon="xbmc.python"
+            version="2.0"/>
+  </requires>
+  <extension point="xbmc.ui.screensaver"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">A simple dashboard presented as an XBMC screensaver</summary>
+    <description lang="en">The Dashboard screensaver is a screensaver displaying RSS Feeds, Current Weather conditions, 2-day Weather forecast and a quote of a stock of your choice</description>
+  </extension>
+</addon>
