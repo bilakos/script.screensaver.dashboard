@@ -48,19 +48,19 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 	try:
 		import xml.etree.ElementTree as ET
 		root = ET.fromstring(str(data1))
-		LastTradePriceOnly = root[0][0][40].text # LastTradePriceOnly
-		ChangeinPercent = root[0][0][56].text # ChangeinPercent
+		LastTradePriceOnly = root[0][0][41].text # LastTradePriceOnly
+		ChangeinPercent = root[0][0][57].text # ChangeinPercent
 		ChangeinPercentColor = '0xFF00FF00'
-		if '-' in ChangeinPercent:
+		if '-' in str(ChangeinPercent):
 			ChangeinPercentColor = '0xFFFF0000'
-		self.CtrlLastTradePriceOnly=xbmcgui.ControlLabel(80, 590, 100, 100, LastTradePriceOnly,'font28_title')
+		self.CtrlLastTradePriceOnly=xbmcgui.ControlLabel(85, 590, 100, 100, LastTradePriceOnly,'font28_title')
 		self.addControl(self.CtrlLastTradePriceOnly)
 		self.CtrlChangeinPercent=xbmcgui.ControlLabel(85, 630, 100, 100, ChangeinPercent,'font14',ChangeinPercentColor)
 		self.addControl(self.CtrlChangeinPercent)
 		if 'true' in __settings__.getSetting('ownquotelabel'):
 			self.getControl(99).setLabel(__settings__.getSetting('quotelabel'))
 		else:
-			self.getControl(99).setLabel(root[0][0][51].text)
+			self.getControl(99).setLabel(root[0][0][67].text)
 	except ValueError:
 		print 'Could not parse stock quotes'
 		

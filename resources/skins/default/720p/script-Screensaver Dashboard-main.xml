@@ -118,7 +118,7 @@
 	</control>
 	<control type="label" id="99">
 		<description>Stock quote label</description>
-		<posx>5</posx>
+		<posx>0</posx>
 		<posy>550</posy>
 		<width>250</width>
 		<height>30</height>
